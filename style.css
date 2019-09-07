@@ -1,0 +1,98 @@
+/* Add your styles here */
+/* this would select all the elements and add some style to them */
+*,*::before,*::after{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* font-size: 1rem; */
+  font-weight: normal;
+}
+/* this would reset some default browser styles */
+body{
+  padding: 0;
+  margin:0;
+  background:linear-gradient(to right, #0af2ea,#00ffcd);
+}
+.calculator{
+   border-radius:20px;
+  display:grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns:repeat(4,100px);
+  grid-template-rows:minmax(120px,auto) repeat(5,100px);
+}
+.calculator > button{
+  /*border-radius: 3%;*/
+  cursor:pointer;
+  font-size:2rem;
+  border:1px solid white;
+  outline:none;
+  background-color:rgba(255,255,255,.75);
+}
+.calculator >button:hover{
+  background-color:#0fab2e;
+  border-radius: 7%;
+}
+.wider{
+  grid-column:span 2;
+}
+.output{
+  grid-column:1/-1;
+  background-color:rgba(0,0,0,.75);
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-around;
+  flex-direction: column;
+  padding:10px; 
+  word-wrap:break-word;
+  word-break:break-all;
+}
+.output .previous-Op{
+  color: rgba(255,255,255,.75);
+  font-size:1.5rem;
+}
+.output .current-Op{
+  color:white;
+  font-size: 2.5rem;
+}
+
+.appLogo{
+  display:flex;
+  justify-content: center;
+}
+#logo{
+  /*align-items: flex-end;*/
+ /*position:flex-end;*/
+}
+#logo {
+  stroke-dasharray: 200px;
+  stroke-dasharray: 200px; 
+}
+#logo path:nth-child(2){
+  
+}
+#logo path:nth-child(3){
+  
+}
+#logo path:nth-child(4){
+  
+}
+#logo path:nth-child(5){
+  
+}
+#logo path:nth-child(6){
+  
+}
+#logo path:nth-child(7){
+  
+}
+#logo path:nth-child(8){
+  
+}
+#logo path:nth-child(9){
+  
+}
+#logo path:nth-child(10){
+  
+}
+
